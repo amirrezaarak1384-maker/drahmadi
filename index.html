@@ -1,0 +1,2108 @@
+<html lang="fa" dir="rtl"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دکتر علی احمدی | ایمپلنت و دندانپزشکی زیبایی در اراک</title>
+    <meta name="description" content="کلینیک تخصصی ایمپلنت و دندانپزشکی زیبایی دکتر علی احمدی در اراک. ارائه خدمات پیشرفته با استفاده از جدیدترین تکنولوژی‌های روز دنیا.">
+    <link rel="icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Vazirmatn:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Vazirmatn', 'Inter', sans-serif;
+            background: #FFFFFF;
+            color: #1D2939;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        /* Top Bar */
+        .top-bar {
+            background: #0F2747;
+            color: #FFFFFF;
+            padding: 0.5rem 0;
+            font-size: 0.8rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .top-bar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5rem 1rem;
+        }
+        .top-bar a {
+            color: #FFFFFF;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            transition: opacity 0.2s;
+        }
+        .top-bar a:hover {
+            opacity: 0.75;
+        }
+        .top-bar .left,
+        .top-bar .right {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            flex-wrap: wrap;
+        }
+        .top-bar .divider {
+            opacity: 0.3;
+            user-select: none;
+        }
+        /* Header */
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid #E6EAF0;
+            transition: all 0.3s;
+        }
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 0.75rem;
+            padding-bottom: 0.75rem;
+        }
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #0F2747;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .logo span {
+            color: #3F88C5;
+        }
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: 1.8rem;
+        }
+        .nav a {
+            color: #1D2939;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s;
+            position: relative;
+        }
+        .nav a:hover {
+            color: #3F88C5;
+        }
+        .nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #3F88C5;
+            transition: width 0.3s;
+        }
+        .nav a:hover::after {
+            width: 100%;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.65rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            border: none;
+            cursor: pointer;
+            transition: all 0.25s;
+            text-decoration: none;
+            font-family: inherit;
+        }
+        .btn-primary {
+            background: #0F2747;
+            color: #FFFFFF;
+        }
+        .btn-primary:hover {
+            background: #1a3a5e;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(15, 39, 71, 0.25);
+        }
+        .btn-accent {
+            background: #3F88C5;
+            color: #FFFFFF;
+        }
+        .btn-accent:hover {
+            background: #3474aa;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(63, 136, 197, 0.3);
+        }
+        .btn-outline {
+            background: transparent;
+            color: #0F2747;
+            border: 2px solid #0F2747;
+        }
+        .btn-outline:hover {
+            background: #0F2747;
+            color: #FFFFFF;
+            transform: translateY(-2px);
+        }
+        .btn-white {
+            background: #FFFFFF;
+            color: #0F2747;
+        }
+        .btn-white:hover {
+            background: #F6F8FA;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        }
+        /* Hero */
+        .hero {
+            padding: 4rem 0 5rem;
+            background: #FFFFFF;
+            position: relative;
+            overflow: hidden;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -30%;
+            right: -10%;
+            width: 60%;
+            height: 120%;
+            background: radial-gradient(ellipse at 70% 50%, rgba(63, 136, 197, 0.06), transparent 70%);
+            pointer-events: none;
+        }
+        .hero .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+        .hero-content h1 {
+            font-size: 3.2rem;
+            font-weight: 800;
+            line-height: 1.15;
+            color: #0F2747;
+            margin-bottom: 1rem;
+        }
+        .hero-content h1 span {
+            color: #3F88C5;
+            display: block;
+        }
+        .hero-content .sub {
+            font-size: 1.15rem;
+            color: #4a5a6e;
+            margin-bottom: 2rem;
+            max-width: 520px;
+            line-height: 1.8;
+        }
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .hero-image {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(15, 39, 71, 0.12);
+            aspect-ratio: 4/3;
+            background: #F6F8FA;
+        }
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .hero-image .badge {
+            position: absolute;
+            bottom: 1.5rem;
+            left: 1.5rem;
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(8px);
+            padding: 0.75rem 1.25rem;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #0F2747;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+        }
+        .hero-image .badge .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #3F88C5;
+            animation: pulse-dot 2s infinite;
+        }
+        @keyframes pulse-dot {
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.5;
+                transform: scale(0.8);
+            }
+        }
+        /* Section */
+        .section {
+            padding: 4.5rem 0;
+        }
+        .section-alt {
+            background: #F6F8FA;
+        }
+        .section-title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #0F2747;
+            margin-bottom: 0.75rem;
+            text-align: center;
+        }
+        .section-sub {
+            font-size: 1.05rem;
+            color: #4a5a6e;
+            text-align: center;
+            max-width: 640px;
+            margin: 0 auto 2.5rem;
+            line-height: 1.8;
+        }
+        .section-title-right {
+            text-align: right;
+        }
+        .section-sub-right {
+            text-align: right;
+            margin-right: 0;
+            margin-left: 0;
+        }
+        /* Trust */
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+        .trust-item {
+            text-align: center;
+            padding: 1.5rem 1rem;
+            background: #FFFFFF;
+            border-radius: 16px;
+            border: 1px solid #E6EAF0;
+            transition: all 0.3s;
+        }
+        .trust-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(15, 39, 71, 0.06);
+        }
+        .trust-item .icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: rgba(63, 136, 197, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 0.75rem;
+            color: #3F88C5;
+        }
+        .trust-item h4 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #0F2747;
+            margin-bottom: 0.3rem;
+        }
+        .trust-item p {
+            font-size: 0.85rem;
+            color: #4a5a6e;
+            line-height: 1.6;
+            margin: 0;
+        }
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+        .service-card {
+            background: #FFFFFF;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid #E6EAF0;
+            transition: all 0.35s;
+            display: flex;
+            flex-direction: column;
+        }
+        .service-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 48px rgba(15, 39, 71, 0.08);
+            border-color: #3F88C5;
+        }
+        .service-card .img-wrap {
+            aspect-ratio: 16/10;
+            overflow: hidden;
+            background: #F6F8FA;
+        }
+        .service-card .img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        .service-card:hover .img-wrap img {
+            transform: scale(1.04);
+        }
+        .service-card .body {
+            padding: 1.5rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .service-card .body h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #0F2747;
+            margin-bottom: 0.5rem;
+        }
+        .service-card .body p {
+            font-size: 0.9rem;
+            color: #4a5a6e;
+            line-height: 1.7;
+            flex: 1;
+            margin-bottom: 1rem;
+        }
+        .service-card .body .read-more {
+            color: #3F88C5;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            transition: gap 0.3s;
+        }
+        .service-card .body .read-more:hover {
+            gap: 0.8rem;
+        }
+        /* Why Choose Us */
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+        .why-item {
+            padding: 2rem 1.5rem;
+            background: #FFFFFF;
+            border-radius: 16px;
+            border: 1px solid #E6EAF0;
+            transition: all 0.3s;
+            text-align: center;
+        }
+        .why-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(15, 39, 71, 0.06);
+        }
+        .why-item .icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 14px;
+            background: rgba(63, 136, 197, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            color: #3F88C5;
+        }
+        .why-item h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #0F2747;
+            margin-bottom: 0.4rem;
+        }
+        .why-item p {
+            font-size: 0.85rem;
+            color: #4a5a6e;
+            line-height: 1.7;
+            margin: 0;
+        }
+        /* Journey Timeline */
+        .journey {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 1rem;
+            position: relative;
+            margin-top: 2rem;
+        }
+        .journey::before {
+            content: '';
+            position: absolute;
+            top: 32px;
+            left: 10%;
+            right: 10%;
+            height: 2px;
+            background: #E6EAF0;
+            z-index: 0;
+        }
+        .journey-step {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        .journey-step .num {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: #0F2747;
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.9rem;
+            margin: 0 auto 0.75rem;
+            position: relative;
+        }
+        .journey-step .num .inner {
+            position: relative;
+            z-index: 2;
+        }
+        .journey-step .num::after {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            border-radius: 50%;
+            border: 2px solid rgba(63, 136, 197, 0.2);
+            animation: ripple 3s infinite;
+        }
+        @keyframes ripple {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1.5);
+                opacity: 0;
+            }
+        }
+        .journey-step h5 {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #0F2747;
+            margin-bottom: 0.2rem;
+        }
+        .journey-step p {
+            font-size: 0.75rem;
+            color: #4a5a6e;
+            margin: 0;
+        }
+        /* Doctor */
+        .doctor-wrap {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        .doctor-image {
+            border-radius: 20px;
+            overflow: hidden;
+            aspect-ratio: 3/4;
+            background: #F6F8FA;
+            box-shadow: 0 16px 48px rgba(15, 39, 71, 0.08);
+        }
+        .doctor-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .doctor-info h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #0F2747;
+            margin-bottom: 0.25rem;
+        }
+        .doctor-info .title {
+            font-size: 1rem;
+            color: #3F88C5;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        .doctor-info p {
+            color: #4a5a6e;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        .doctor-info .quals {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .doctor-info .quals span {
+            font-size: 0.85rem;
+            color: #1D2939;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .doctor-info .quals span::before {
+            content: '✓';
+            color: #3F88C5;
+            font-weight: 700;
+        }
+        /* Before After */
+        .ba-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+        .ba-item {
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid #E6EAF0;
+            background: #FFFFFF;
+        }
+        .ba-item .img-wrap {
+            aspect-ratio: 16/10;
+            background: #F6F8FA;
+            overflow: hidden;
+        }
+        .ba-item .img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .ba-item .label {
+            padding: 0.75rem 1.25rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #0F2747;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #E6EAF0;
+        }
+        .ba-item .label .tag {
+            font-weight: 400;
+            color: #4a5a6e;
+            font-size: 0.75rem;
+        }
+        /* Testimonials */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+        .testimonial-card {
+            background: #FFFFFF;
+            padding: 1.75rem;
+            border-radius: 16px;
+            border: 1px solid #E6EAF0;
+            transition: all 0.3s;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(15, 39, 71, 0.06);
+        }
+        .testimonial-card .stars {
+            color: #F59E0B;
+            font-size: 1rem;
+            letter-spacing: 2px;
+            margin-bottom: 0.75rem;
+        }
+        .testimonial-card blockquote {
+            font-size: 0.95rem;
+            color: #1D2939;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+            font-style: normal;
+        }
+        .testimonial-card .author {
+            font-weight: 600;
+            color: #0F2747;
+            font-size: 0.9rem;
+        }
+        .testimonial-card .author .detail {
+            font-weight: 400;
+            color: #4a5a6e;
+            font-size: 0.8rem;
+        }
+        /* FAQ */
+        .faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+        .faq-item {
+            background: #FFFFFF;
+            border-radius: 12px;
+            border: 1px solid #E6EAF0;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+        .faq-item:hover {
+            border-color: #3F88C5;
+        }
+        .faq-item .question {
+            padding: 1.25rem 1.5rem;
+            font-weight: 600;
+            color: #0F2747;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            background: none;
+            border: none;
+            width: 100%;
+            text-align: right;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: background 0.2s;
+        }
+        .faq-item .question:hover {
+            background: #F6F8FA;
+        }
+        .faq-item .answer {
+            padding: 0 1.5rem 1.25rem;
+            color: #4a5a6e;
+            line-height: 1.8;
+            font-size: 0.95rem;
+        }
+        /* Articles */
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+        .article-card {
+            background: #FFFFFF;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid #E6EAF0;
+            transition: all 0.35s;
+        }
+        .article-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 48px rgba(15, 39, 71, 0.08);
+        }
+        .article-card .img-wrap {
+            aspect-ratio: 16/10;
+            overflow: hidden;
+            background: #F6F8FA;
+        }
+        .article-card .img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        .article-card:hover .img-wrap img {
+            transform: scale(1.04);
+        }
+        .article-card .body {
+            padding: 1.5rem;
+        }
+        .article-card .body .meta {
+            font-size: 0.75rem;
+            color: #4a5a6e;
+            margin-bottom: 0.5rem;
+            display: flex;
+            gap: 1rem;
+        }
+        .article-card .body h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #0F2747;
+            margin-bottom: 0.5rem;
+            line-height: 1.4;
+        }
+        .article-card .body p {
+            font-size: 0.9rem;
+            color: #4a5a6e;
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+        .article-card .body .read-more {
+            color: #3F88C5;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            transition: gap 0.3s;
+        }
+        .article-card .body .read-more:hover {
+            gap: 0.8rem;
+        }
+        /* CTA */
+        .cta-section {
+            background: #0F2747;
+            padding: 4rem 0;
+            text-align: center;
+            border-radius: 24px;
+            margin: 2rem 0 0;
+        }
+        .cta-section h2 {
+            font-size: 2.4rem;
+            color: #FFFFFF;
+            margin-bottom: 0.75rem;
+        }
+        .cta-section p {
+            color: rgba(255, 255, 255, 0.75);
+            font-size: 1.1rem;
+            max-width: 540px;
+            margin: 0 auto 2rem;
+            line-height: 1.8;
+        }
+        .cta-section .buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        /* Footer */
+        .footer {
+            background: #0F2747;
+            color: rgba(255, 255, 255, 0.7);
+            padding: 3rem 0 1.5rem;
+            margin-top: 3rem;
+        }
+        .footer .container {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 2.5rem;
+        }
+        .footer h4 {
+            color: #FFFFFF;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .footer p,
+        .footer a {
+            font-size: 0.85rem;
+            line-height: 2;
+            color: rgba(255, 255, 255, 0.65);
+            text-decoration: none;
+            display: block;
+            transition: color 0.2s;
+        }
+        .footer a:hover {
+            color: #FFFFFF;
+        }
+        .footer .brand {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #FFFFFF;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        .footer .brand span {
+            color: #3F88C5;
+        }
+        .footer .socials {
+            display: flex;
+            gap: 0.75rem;
+            margin-top: 0.75rem;
+        }
+        .footer .socials a {
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.06);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FFFFFF;
+            transition: background 0.2s;
+        }
+        .footer .socials a:hover {
+            background: rgba(63, 136, 197, 0.3);
+        }
+        .footer .bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            padding-top: 1.5rem;
+            margin-top: 2rem;
+            text-align: center;
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.4);
+            grid-column: 1 / -1;
+        }
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero .container {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+            .hero-content h1 {
+                font-size: 2.6rem;
+            }
+            .hero-content .sub {
+                max-width: 100%;
+            }
+            .trust-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .why-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .journey {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1.5rem;
+            }
+            .journey::before {
+                display: none;
+            }
+            .testimonials-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .articles-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .footer .container {
+                grid-template-columns: 1fr 1fr;
+            }
+            .doctor-wrap {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .ba-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        @media (max-width: 768px) {
+            .top-bar .container {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0.25rem;
+            }
+            .top-bar .left,
+            .top-bar .right {
+                justify-content: center;
+                font-size: 0.7rem;
+                gap: 0.75rem;
+            }
+            .header .container {
+                flex-wrap: wrap;
+                gap: 0.5rem;
+            }
+            .nav {
+                gap: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .nav a {
+                font-size: 0.8rem;
+            }
+            .hero {
+                padding: 2.5rem 0 3rem;
+                min-height: auto;
+            }
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+            .hero-content .sub {
+                font-size: 0.95rem;
+            }
+            .hero-buttons .btn {
+                width: 100%;
+                justify-content: center;
+            }
+            .section {
+                padding: 3rem 0;
+            }
+            .section-title {
+                font-size: 1.6rem;
+            }
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            .trust-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem;
+            }
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+            .journey {
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem;
+            }
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+            .footer .container {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            .cta-section h2 {
+                font-size: 1.6rem;
+            }
+            .doctor-info h2 {
+                font-size: 1.5rem;
+            }
+        }
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 1rem;
+            }
+            .trust-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 0.75rem;
+            }
+            .trust-item {
+                padding: 1rem;
+            }
+            .hero-content h1 {
+                font-size: 1.6rem;
+            }
+            .nav {
+                gap: 0.6rem;
+            }
+            .nav a {
+                font-size: 0.7rem;
+            }
+            .btn {
+                font-size: 0.8rem;
+                padding: 0.5rem 1rem;
+            }
+            .journey-step .num {
+                width: 36px;
+                height: 36px;
+                font-size: 0.75rem;
+            }
+            .journey-step h5 {
+                font-size: 0.75rem;
+            }
+            .journey-step p {
+                font-size: 0.65rem;
+            }
+        }
+        /* Utility */
+        .text-center {
+            text-align: center;
+        }
+        .mt-1 {
+            margin-top: 1rem;
+        }
+        .mt-2 {
+            margin-top: 2rem;
+        }
+        .gap-1 {
+            gap: 1rem;
+        }
+        .flex-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+        /* Placeholder image styling */
+        .placeholder-img {
+            background: linear-gradient(135deg, #F6F8FA 0%, #E6EAF0 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #4a5a6e;
+            font-size: 0.85rem;
+            font-weight: 500;
+            min-height: 200px;
+        }
+        .placeholder-img span {
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ============================================================
+    TOP INFO BAR
+    ============================================================ -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="right">
+                <a href="tel:+989123456789" aria-label="تلفن" class="">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>&nbsp; &nbsp;۰۸۶-۳۲۲۲-۸۴۲۹<br>&nbsp; &nbsp;۰۹۱۸-۲۳۰-۸۴۲۹<br></a>
+                <span class="divider">|</span>
+                <a href="https://wa.me/989123456789" target="_blank" rel="noopener" aria-label="واتساپ" class="">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                    واتساپ
+                </a>
+                <span class="divider">|</span>
+                <span class="">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    اراک، خیابان عباس اباد، جنب بیمه سلامت، ساختمان فردوسی، طبقه زیرین</span>
+            </div>
+            <div class="left">
+                <span class="">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    شنبه تا چهارشنبه ۱۶-۲۱</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================
+    STICKY NAVIGATION
+    ============================================================ -->
+    <header class="header" role="banner">
+        <div class="container">
+<a href="/" class="logo" aria-label="دکتر علی احمدی - کلینیک دندانپزشکی" style="display: flex; align-items: center; text-decoration: none; gap: 12px;">
+    <img 
+        src="https://i.postimg.cc/0y8c8cz0/IMG-1238.jpg" 
+        alt="لوگوی کلینیک دندانپزشکی دکتر علی احمدی" 
+        style="display: block; height: 50px; width: auto; max-width: 150px;"
+    />
+    <span style="font-size: 1.2rem; font-weight: 700; color: #0F2747; white-space: nowrap;">
+        دکتر <span style="color: #3F88C5;">علی احمدی</span>
+    </span>
+</a>
+            <nav class="nav" role="navigation" aria-label="منوی اصلی">
+                <a href="/services">خدمات</a>
+                <a href="/about">درباره دکتر</a>
+                <a href="/articles">مقالات</a>
+                <a href="/gallery">گالری</a>
+                <a href="/contact">تماس</a>
+                <a href="/appointments" class="btn btn-primary" style="padding:0.5rem 1.2rem;font-size:0.8rem; color: #FFFFFF; background-color: #0F2747; border-radius: 8px; text-decoration: none; font-weight: 600;">نوبت‌دهی</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ============================================================
+    HERO SECTION
+    ============================================================ -->
+    <section class="hero" aria-labelledby="hero-title">
+        <div class="container">
+            <div class="hero-content">
+                <h1 id="hero-title" class="">
+                    ایمپلنت و دندانپزشکی زیبایی
+                    <span>پیشرفته و مدرن</span>
+                </h1>
+                <p class="sub">
+                    دندانپزشکی مبتنی بر شواهد با استفاده از تکنولوژی روز و مواد باکیفیت در محیطی آرام و حرفه‌ای.
+                </p>
+                <div class="hero-buttons">
+                    <a href="/appointments" class="btn btn-primary">نوبت‌دهی آنلاین</a>
+                    <a href="/services" class="btn btn-outline">مشاهده خدمات</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!--
+                ============================================================
+                🔁 PLACEHOLDER IMAGE – Replace with real clinic photo
+                Recommended: High-quality interior of clinic, treatment room,
+                or doctor consulting with patient. Calm, medical, modern.
+                ============================================================
+                -->
+                <img src="data:image/jpeg;base64,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" alt="کلینیک دندانپزشکی دکتر علی احمدی - فضای مدرن و حرفه‌ای" loading="lazy" class="">
+                <div class="badge">
+                    <span class="dot"></span>
+                    پذیرش بیماران جدید
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    TRUST SECTION
+    ============================================================ -->
+    <section class="section" aria-labelledby="trust-title">
+        <div class="container">
+            <h2 id="trust-title" class="section-title">چرا کلینیک دکتر احمدی؟</h2>
+            <p class="section-sub">خدمات دندانپزشکی بر اساس استانداردهای جهانی و با استفاده از به‌روزترین تکنولوژی‌ها</p>
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <div class="icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                    </div>
+                    <h4 class="">تکنولوژی روز</h4>
+                    <p class="">استفاده از تجهیزات پیشرفته دیجیتال برای تشخیص و درمان دقیق</p>
+                </div>
+                <div class="trust-item">
+                    <div class="icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
+                    </div>
+                    <h4 class="">بهترین مواد درمانی</h4>
+                    <p class="">استفاده از برندهای معتبر و باکیفیت اروپایی و آمریکایی</p>
+                </div>
+                <div class="trust-item">
+                    <div class="icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                    </div>
+                    <h4 class="">درمان مبتنی بر شواهد</h4>
+                    <p class="">همه درمان‌ها بر اساس جدیدترین تحقیقات علمی انجام می‌شوند</p>
+                </div>
+                <div class="trust-item">
+                    <div class="icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    </div>
+                    <h4 class="">روکش ۱ روزه ایمپلنت</h4>
+                    <p class="">در صورت صلاحیت بالینی، روکش موقت در همان جلسه ارائه می‌شود</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    SERVICES GRID
+    ============================================================ -->
+    <section class="section section-alt" aria-labelledby="services-title">
+        <div class="container">
+            <h2 id="services-title" class="section-title">خدمات تخصصی</h2>
+            <p class="section-sub">خدمات متنوع دندانپزشکی با بالاترین استانداردهای کیفیت و دقت</p>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="img-wrap">
+                        <!--
+                        ============================================================
+                        🔁 PLACEHOLDER IMAGE – Replace with real treatment photo
+                        ============================================================
+                        -->
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&amp;h=400&amp;fit=crop&amp;crop=center&amp;q=80" alt="ایمپلنت دندان" loading="lazy" class="">
+                    </div>
+                    <div class="body">
+                        <h3 class="">ایمپلنت دندان</h3>
+                        <p class="">جایگزینی دائمی و طبیعی برای دندان‌های از دست رفته با استفاده از ایمپلنت‌های باکیفیت اروپایی.</p>
+                        <a href="/services/dental-implants" class="read-more">
+                            اطلاعات بیشتر
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="img-wrap">
+                        <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=600&amp;h=400&amp;fit=crop&amp;crop=center&amp;q=80" alt="لمینیت سرامیکی" loading="lazy" class="">
+                    </div>
+                    <div class="body">
+                        <h3 class="">لمینیت سرامیکی</h3>
+                        <p class="">طراحی لبخند با لمینیت‌های نازک سرامیکی برای اصلاح رنگ، فرم و طرح لبخند.</p>
+                        <a href="/services/porcelain-veneers" class="read-more">
+                            اطلاعات بیشتر
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="img-wrap">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&amp;h=400&amp;fit=crop&amp;crop=center&amp;q=80" alt="کامپوزیت ونیر" loading="lazy" class="">
+                    </div>
+                    <div class="body">
+                        <h3 class="">کامپوزیت ونیر</h3>
+                        <p class="">ترمیم‌های زیبایی با کامپوزیت همرنگ دندان برای اصلاح طرح لبخند و ترمیم دندان‌ها.</p>
+                        <a href="/services/composite-veneers" class="read-more">
+                            اطلاعات بیشتر
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="img-wrap">
+                        <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&amp;h=400&amp;fit=crop&amp;crop=center&amp;q=80" alt="پیوند استخوان" loading="lazy" class="">
+                    </div>
+                    <div class="body">
+                        <h3 class="">پیوند استخوان</h3>
+                        <p class="">بازسازی و تقویت استخوان فک برای آماده‌سازی ایمپلنت در موارد تحلیل استخوان.</p>
+                        <a href="/services/bone-grafting" class="read-more">
+                            اطلاعات بیشتر
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- Service 5 -->
+                <div class="service-card">
+                    <div class="img-wrap">
+                        <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=600&amp;h=400&amp;fit=crop&amp;crop=center&amp;q=80" alt="لیفت سینوس" loading="lazy" class="">
+                    </div>
+                    <div class="body">
+                        <h3 class="">لیفت سینوس</h3>
+                        <p class="">افزایش ارتفاع استخوان فک بالا در ناحیه سینوس برای امکان کاشت ایمپلنت.</p>
+                        <a href="/services/sinus-lift" class="read-more">
+                            اطلاعات بیشتر
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- Service 6 -->
+                <div class="service-card">
+                    <div class="img-wrap">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&amp;h=400&amp;fit=crop&amp;crop=center&amp;q=80" alt="طراحی لبخند" loading="lazy" class="">
+                    </div>
+                    <div class="body">
+                        <h3 class="">طراحی لبخند</h3>
+                        <p class="">برنامه‌ریزی دیجیتال و شخصی‌سازی شده برای دستیابی به لبخندی زیبا و طبیعی.</p>
+                        <a href="/services/smile-design" class="read-more">
+                            اطلاعات بیشتر
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    WHY CHOOSE US
+    ============================================================ -->
+    <section class="section" aria-labelledby="why-title">
+        <div class="container">
+            <h2 id="why-title" class="section-title">چرا کلینیک دکتر احمدی؟</h2>
+            <p class="section-sub">دقت، تکنولوژی و تعهد به سلامت بیماران در محیطی آرام و حرفه‌ای</p>
+            <div class="why-grid">
+                <div class="why-item">
+                    <div class="icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                    </div>
+                    <h4 class="">تکنولوژی پیشرفته</h4>
+                    <p class="">استفاده از اسکنرهای دیجیتال، رادیوگرافی سه‌بعدی و نرم‌افزارهای طراحی لبخند</p>
+                </div>
+                <div class="why-item">
+                    <div class="icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v8"></path><path d="M8 12h8"></path></svg>
+                    </div>
+                    <h4 class="">دقت در درمان</h4>
+                    <p class="">برنامه‌ریزی دقیق هر درمان با استفاده از آنالیز دیجیتال و تصویربرداری پیشرفته</p>
+                </div>
+                <div class="why-item">
+                    <div class="icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    <h4 class="">استریلیزاسیون کامل</h4>
+                    <p class="">رعایت بالاترین استانداردهای بهداشتی و استریلیزاسیون مطابق با پروتکل‌های بین‌المللی</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    TREATMENT JOURNEY TIMELINE
+    ============================================================ -->
+    <section class="section section-alt" aria-labelledby="journey-title">
+        <div class="container">
+            <h2 id="journey-title" class="section-title">مسیر درمانی شما</h2>
+            <p class="section-sub">از مشاوره تا نتیجه نهایی، در هر مرحله همراه شما هستیم</p>
+            <div class="journey">
+                <div class="journey-step">
+                    <div class="num"><span class="inner">۱</span></div>
+                    <h5 class="">مشاوره</h5>
+                    <p class="">بررسی نیازها و انتظارات شما</p>
+                </div>
+                <div class="journey-step">
+                    <div class="num"><span class="inner">۲</span></div>
+                    <h5 class="">تشخیص</h5>
+                    <p class="">معاینه و تصویربرداری دقیق</p>
+                </div>
+                <div class="journey-step">
+                    <div class="num"><span class="inner">۳</span></div>
+                    <h5 class="">برنامه‌ریزی دیجیتال</h5>
+                    <p class="">طراحی درمان با نرم‌افزارهای پیشرفته</p>
+                </div>
+                <div class="journey-step">
+                    <div class="num"><span class="inner">۴</span></div>
+                    <h5 class="">درمان</h5>
+                    <p class="">اجرای دقیق و بدون درد</p>
+                </div>
+                <div class="journey-step">
+                    <div class="num"><span class="inner">۵</span></div>
+                    <h5 class="">پیگیری</h5>
+                    <p class="">مراقبت‌های پس از درمان</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    DOCTOR SECTION
+    ============================================================ -->
+    <section class="section" aria-labelledby="doctor-title">
+        <div class="container">
+            <div class="doctor-wrap">
+                <div class="doctor-image">
+                    <!--
+                    ============================================================
+                    🔁 PLACEHOLDER IMAGE – Replace with real doctor portrait
+                    Recommended: Professional headshot of Dr. Ali Ahmadi
+                    in medical attire, calm and trustworthy expression.
+                    ============================================================
+                    -->
+                    <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=600&amp;h=800&amp;fit=crop&amp;crop=center&amp;q=80" alt="دکتر علی احمدی - دندانپزشک متخصص ایمپلنت و زیبایی" loading="lazy" class="">
+                </div>
+                <div class="doctor-info">
+                    <h2 id="doctor-title" class="">دکتر علی احمدی</h2>
+                    <span class="title">جراح - دندانپزشک&nbsp;</span>
+                    <p class="">
+                        دکتر علی احمدی با ۲۸ سال تجربه در زمینه دندانپزشکی همواره به دنبال ارائه خدمات مبتنی بر شواهد و با استفاده از جدیدترین تکنولوژی‌های
+                        روز دنیا بوده است. فلسفه بالینی ایشان ترکیب دقت علمی با هنر طراحی لبخند است.
+                    </p>
+                    <p class="">
+                        دکتر احمدی دوره‌های تخصصی متعددی در زمینه ایمپلنت‌های پیشرفته، پیوند استخوان
+                        و طراحی لبخند در اروپا گذرانده و عضو انجمن‌های معتبر دندانپزشکی بین‌المللی است.
+                    </p>
+                    <div class="quals">
+                        <span>متخصص ایمپلنت</span>
+                        <span>عضو انجمن دندانپزشکی آمریکا</span>
+                        <span>بیش از ۱۵ سال تجربه</span>
+                        <span>طراحی لبخند دیجیتال</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    BEFORE / AFTER SLIDER
+    ============================================================ -->
+    <section class="section section-alt" aria-labelledby="ba-title">
+        <div class="container">
+            <h2 id="ba-title" class="section-title">نمونه‌های قبل و بعد</h2>
+            <p class="section-sub">نتایج واقعی درمان‌های انجام شده در کلینیک دکتر احمدی</p>
+            <div class="ba-grid">
+                <div class="ba-item">
+                    <div class="img-wrap">
+                        <!--
+                        ============================================================
+                        🔁 PLACEHOLDER IMAGES – Replace with real before/after photos
+                        ============================================================
+                        -->
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&amp;h=400&amp;fit=crop&amp;crop=center&amp;q=80" alt="نمونه قبل و بعد - ایمپلنت" loading="lazy" class="">
+                    </div>
+                    <div class="label">
+                        <span>ایمپلنت دندان</span>
+                        <span class="tag">قبل / بعد</span>
+                    </div>
+                </div>
+                <div class="ba-item">
+                    <div class="img-wrap">
+                        <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=600&amp;h=400&amp;fit=crop&amp;crop=center&amp;q=80" alt="نمونه قبل و بعد - لمینیت" loading="lazy" class="">
+                    </div>
+                    <div class="label">
+                        <span>لمینیت سرامیکی</span>
+                        <span class="tag">قبل / بعد</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    TESTIMONIALS
+    ============================================================ -->
+    <section class="section" aria-labelledby="testimonials-title">
+        <div class="container">
+            <h2 id="testimonials-title" class="section-title">نظرات بیماران</h2>
+            <p class="section-sub">تجربه واقعی بیماران از درمان در کلینیک دکتر احمدی</p>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <blockquote class="">
+                        "بسیار راضی هستم از نتیجه ایمپلنت. دکتر احمدی با دقت و حوصله تمام مراحل را توضیح دادند و محیط کلینیک بسیار آرام و حرفه‌ای بود."
+                    </blockquote>
+                    <div class="author">
+                        آقای رضایی <span class="detail">– ایمپلنت دندان</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <blockquote class="">
+                        "لمینیت‌های من به طرز شگفت‌انگیزی طبیعی شده. تکنولوژی دیجیتال و دقت دکتر احمدی واقعاً بی‌نظیر بود."
+                    </blockquote>
+                    <div class="author">
+                        خانم کریمی <span class="detail">– لمینیت سرامیکی</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <blockquote class="">
+                        "بعد از سال‌ها نگرانی از دندان‌هایم، با طراحی لبخند دکتر احمدی اعتماد به نفسم برگشت. بهترین تصمیم زندگیم بود."
+                    </blockquote>
+                    <div class="author">
+                        آقای موسوی <span class="detail">– طراحی لبخند</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    FAQ ACCORDION
+    ============================================================ -->
+    <section class="section section-alt" aria-labelledby="faq-title">
+        <div class="container">
+            <h2 id="faq-title" class="section-title">سوالات متداول</h2>
+            <p class="section-sub">پاسخ به سوالات رایج درباره خدمات و درمان‌های کلینیک</p>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="question" aria-expanded="false">
+                        ایمپلنت دندان چقدر عمر می‌کند؟
+                        <span>+</span>
+                    </button>
+                    <div class="answer" style="display: none;">
+                        ایمپلنت‌های دندانی با مراقبت مناسب می‌توانند تا ۲۰ سال یا بیشتر عمر کنند. طول عمر ایمپلنت به عوامل مختلفی مانند بهداشت دهان، وضعیت سلامت عمومی و کیفیت استخوان فک بستگی دارد.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="question" aria-expanded="false">
+                        آیا ایمپلنت درد دارد؟
+                        <span>+</span>
+                    </button>
+                    <div class="answer" style="display:none;">
+                        ایمپلنت تحت بی‌حسی موضعی انجام می‌شود و بیمار در حین درمان دردی احساس نمی‌کند. پس از درمان، ممکن است درد خفیفی وجود داشته باشد که با داروهای تجویز شده قابل کنترل است.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="question" aria-expanded="false">
+                        چه مدت زمان برای ایمپلنت نیاز است؟
+                        <span>+</span>
+                    </button>
+                    <div class="answer" style="display:none;">
+                        زمان درمان ایمپلنت به شرایط هر بیمار بستگی دارد. به طور کلی، فرآیند از مشاوره تا قرارگیری تاج نهایی بین ۳ تا ۶ ماه طول می‌کشد. در مواردی که تاج موقت همان‌روز امکان‌پذیر است، بیمار با دندان موقت از کلینیک خارج می‌شود.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="question" aria-expanded="false">
+                        تفاوت لمینیت و کامپوزیت چیست؟
+                        <span>+</span>
+                    </button>
+                    <div class="answer" style="display:none;">
+                        لمینیت‌ها از جنس سرامیک هستند و مقاومت و زیبایی بالاتری دارند، اما نیاز به تراش بیشتری دارند. کامپوزیت‌ها مستقیماً روی دندان ساخته می‌شوند و در یک جلسه قابل انجام هستند، اما طول عمر کمتری دارند. انتخاب بین این دو به شرایط دندان و نیاز بیمار بستگی دارد.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    LATEST ARTICLES
+    ============================================================ -->
+    <section class="section" aria-labelledby="articles-title">
+        <div class="container">
+            <h2 id="articles-title" class="section-title">جدیدترین مقالات</h2>
+            <p class="section-sub">مطالب آموزشی و علمی در زمینه دندانپزشکی و سلامت دهان</p>
+            <div class="articles-grid">
+                <article class="article-card">
+                    <div class="img-wrap">
+                        <!--
+                        ============================================================
+                        🔁 PLACEHOLDER IMAGE – Replace with real article image
+                        ============================================================
+                        -->
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&amp;h=400&amp;fit=crop&amp;crop=center&amp;q=80" alt="همه چیز درباره ایمپلنت دندان" loading="lazy" class="">
+                    </div>
+                    <div class="body">
+                        <div class="meta">
+                            <span>۱۴۰۵/۰۴/۱۲</span>
+                            <span>۵ دقیقه مطالعه</span>
+                        </div>
+                        <h3 class="">همه چیز درباره ایمپلنت دندان</h3>
+                        <p class="">راهنمای جامع ایمپلنت دندان از مشاوره تا نتیجه نهایی</p>
+                        <a href="/articles/dental-implants-guide" class="read-more">
+                            مطالعه بیشتر
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        </a>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <div class="img-wrap">
+                        <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=600&amp;h=400&amp;fit=crop&amp;crop=center&amp;q=80" alt="طراحی لبخند دیجیتال" loading="lazy" class="">
+                    </div>
+                    <div class="body">
+                        <div class="meta">
+                            <span>۱۴۰۵/۰۴/۰۸</span>
+                            <span>۴ دقیقه مطالعه</span>
+                        </div>
+                        <h3 class="">طراحی لبخند دیجیتال چیست؟</h3>
+                        <p class="">آشنایی با تکنولوژی طراحی لبخند و مزایای آن</p>
+                        <a href="/articles/digital-smile-design" class="read-more">
+                            مطالعه بیشتر
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        </a>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <div class="img-wrap">
+                        <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&amp;h=400&amp;fit=crop&amp;crop=center&amp;q=80" alt="مراقبت‌های پس از ایمپلنت" loading="lazy" class="">
+                    </div>
+                    <div class="body">
+                        <div class="meta">
+                            <span>۱۴۰۵/۰۴/۰۵</span>
+                            <span>۳ دقیقه مطالعه</span>
+                        </div>
+                        <h3 class="">مراقبت‌های پس از کاشت ایمپلنت</h3>
+                        <p class="">نکات کلیدی برای مراقبت از ایمپلنت و افزایش طول عمر آن</p>
+                        <a href="/articles/post-implant-care" class="read-more">
+                            مطالعه بیشتر
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    FINAL CTA
+    ============================================================ -->
+    <section class="section" style="padding-top:0;" aria-labelledby="cta-title">
+        <div class="container">
+            <div class="cta-section">
+                <h2 id="cta-title" class="">برای نوبت‌دهی تماس بگیرید</h2>
+                <p class="">برای مشاوره رایگان و تعیین وقت معاینه، با ما تماس بگیرید یا به‌صورت آنلاین نوبت رزرو کنید.</p>
+                <div class="buttons">
+                    <a href="/appointments" class="btn btn-white">نوبت‌دهی آنلاین</a>
+                    <a href="tel:+989123456789" class="btn btn-accent">تماس تلفنی</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    PROFESSIONAL FOOTER
+    ============================================================ -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div>
+                <span class="brand">دکتر<span>احمدی</span></span>
+                <p class="">کلینیک تخصصی ایمپلنت و دندانپزشکی زیبایی در اراک، با بهره‌گیری از پیشرفته‌ترین تکنولوژی‌های روز دنیا.</p>
+                <div class="socials">
+                    <a href="#" aria-label="اینستاگرام" class="">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                    <a href="#" aria-label="تلگرام" class="">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"></path><path d="M22 2l-7 20-4-9-9-4 20-7z"></path></svg>
+                    </a>
+                    <a href="#" aria-label="لینکدین" class="">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h4 class="">خدمات</h4>
+                <a href="/services/dental-implants" class="">ایمپلنت</a>
+                <a href="/services/porcelain-veneers" class="">لمینیت</a>
+                <a href="/services/composite-veneers" class="">کامپوزیت</a>
+                <a href="/services/bone-grafting" class="">پیوند استخوان</a>
+                <a href="/services/sinus-lift" class="">لیفت سینوس</a>
+            </div>
+            <div>
+                <h4 class="">دسترسی سریع</h4>
+                <a href="/about" class="">درباره دکتر</a>
+                <a href="/articles" class="">مقالات</a>
+                <a href="/gallery" class="">گالری</a>
+                <a href="/contact" class="">تماس با ما</a>
+                <a href="/appointments" class="">نوبت‌دهی</a>
+            </div>
+            <div>
+                <h4 class="">اطلاعات تماس</h4>
+                <p class="">📞<span style="font-size: 0.85rem;">۰۹۱۸-۲۳۰-۸۴۲۹</span></p><div><div>&nbsp; &nbsp; ۰۸۶-۳۲۲۲-۸۴۲۹&nbsp;</div></div><p></p>
+                <p class="">📍 اراک، خیابان عباس آباد، جنب بیمه سلامت ساختمان فردوسی، طبقه زیرین</p>
+                <p class="">🕐 شنبه تا چهارشنبه ۱۶-۲۱</p>
+                <p class=""><br></p>
+            </div>
+            <div class="bottom">
+                <p class="">© ۱۴۰۵ کلینیک دندانپزشکی دکتر علی احمدی. تمامی حقوق محفوظ است.</p>
+                <p style="margin-top:0.25rem;" class="">
+                    <a href="/privacy" style="display:inline;color:rgba(255,255,255,0.4);" class="">حریم خصوصی</a>
+                    &nbsp;|&nbsp;
+                    <a href="/disclaimer" style="display:inline;color:rgba(255,255,255,0.4);" class="">سلب مسئولیت پزشکی</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+    SIMPLE FAQ TOGGLE (minimal JS for accordion)
+    ============================================================ -->
+    <script>
+        document.querySelectorAll('.faq-item .question').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                var answer = this.nextElementSibling;
+                var isOpen = answer.style.display === 'block';
+                answer.style.display = isOpen ? 'none' : 'block';
+                this.setAttribute('aria-expanded', !isOpen);
+                this.querySelector('span:last-child').textContent = isOpen ? '+' : '−';
+            });
+        });
+    </script>
+
+    <!--
+    ============================================================
+    📝 CONTENT EDITING GUIDE
+    ============================================================
+    To update content manually in the future:
+
+    1.  Hero Headline & Subheadline:
+        - Find the <section class="hero"> section.
+        - Edit the <h1> and <p class="sub"> text.
+
+    2.  Services:
+        - Find the <div class="services-grid"> section.
+        - Each .service-card contains: image, title, description, and link.
+        - Update the <h3>, <p>, and <a href="..."> for each service.
+
+    3.  Doctor Info:
+        - Find the <section class="section" aria-labelledby="doctor-title">.
+        - Edit the <h2>, <span class="title">, and <p> paragraphs.
+
+    4.  Testimonials:
+        - Find the <div class="testimonials-grid">.
+        - Each .testimonial-card contains: stars, blockquote, and author.
+
+    5.  FAQ:
+        - Find the <div class="faq-list">.
+        - Each .faq-item contains a .question button and .answer div.
+        - Update both the question and answer text.
+
+    6.  Articles:
+        - Find the <div class="articles-grid">.
+        - Each .article-card contains: image, meta (date, read time), title, excerpt, and link.
+
+    7.  Footer:
+        - Find the <footer class="footer">.
+        - Update contact info, links, and social media URLs.
+
+    8.  Colors:
+        - Primary: #0F2747
+        - Background: #FFFFFF
+        - Secondary: #F6F8FA
+        - Accent: #3F88C5
+        - Border: #E6EAF0
+        - Text: #1D2939
+        - These are used throughout. Search and replace if needed.
+
+    9.  Top Bar:
+        - Find the <div class="top-bar">.
+        - Update phone number, WhatsApp link, address, and working hours.
+
+    10. Navigation:
+        - Find the <nav class="nav"> inside the header.
+        - Update menu items and URLs as needed.
+
+    11. CTA Section:
+        - Find the <div class="cta-section">.
+        - Update the heading, description, and button links.
+
+    12. Trust Section:
+        - Find the <div class="trust-grid">.
+        - Each .trust-item contains an icon, <h4>, and <p>.
+        - Update the text for each trust point.
+
+    13. Why Choose Us:
+        - Find the <div class="why-grid">.
+        - Each .why-item contains an icon, <h4>, and <p>.
+        - Update the text for each reason.
+
+    14. Journey Timeline:
+        - Find the <div class="journey">.
+        - Each .journey-step contains a number, <h5>, and <p>.
+        - Update the step titles and descriptions.
+
+    15. Before/After:
+        - Find the <div class="ba-grid">.
+        - Each .ba-item contains an image and a label.
+        - Replace the image src and update the label text.
+
+    16. Open Graph & Twitter Meta:
+        - Find the <meta property="og:..."> and <meta name="twitter:..."> tags in the <head>.
+        - Update the content attributes with your clinic's information.
+
+    17. Schema.org Structured Data:
+        - Find the <script type="application/ld+json"> tags at the bottom of the <head>.
+        - Update the JSON-LD with your clinic's accurate information.
+
+    18. Sitemap & Robots:
+        - Update sitemap.xml with your actual URLs.
+        - Update robots.txt if needed.
+
+    19. Images:
+        - All image placeholders are marked with 🔁 PLACEHOLDER IMAGE comments.
+        - Replace the src attributes with your actual image URLs.
+        - Recommended image sizes:
+            - Hero: 800x600
+            - Services: 600x400
+            - Doctor: 600x800
+            - Before/After: 600x400
+            - Articles: 600x400
+    ============================================================
+    -->
+
+    <!--
+    ============================================================
+    📱 STRUCTURED DATA – Schema.org for Dentist & MedicalBusiness
+    ============================================================
+    -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Dentist",
+            "@id": "https://dentalclinic.example.com/",
+            "name": "دکتر علی احمدی - کلینیک دندانپزشکی",
+            "alternateName": "کلینیک دندانپزشکی دکتر احمدی",
+            "description": "کلینیک تخصصی ایمپلنت و دندانپزشکی زیبایی با استفاده از تکنولوژی روز و مواد باکیفیت در اراک",
+            "url": "https://dentalclinic.example.com/",
+            "telephone": "+989123456789",
+            "email": "info@dentalclinic.example.com",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "خیابان امام خمینی، ساختمان پزشکان پارس",
+                "addressLocality": "اراک",
+                "addressCountry": "IR"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 34.0918,
+                "longitude": 49.6892
+            },
+            "openingHours": "Sa-We 09:00-20:00, Th 09:00-14:00",
+            "priceRange": "$$",
+            "image": "https://dentalclinic.example.com/images/clinic.jpg",
+            "hasMap": "https://maps.google.com/?q=اراک،+خیابان+امام+خمینی،+ساختمان+پزشکان+پارس",
+            "medicalSpecialty": "Dentistry",
+            "availableService": [{
+                "@type": "MedicalProcedure",
+                "name": "ایمپلنت دندان",
+                "description": "کاشت ایمپلنت دندانی با استفاده از ایمپلنت‌های باکیفیت اروپایی"
+            }, {
+                "@type": "MedicalProcedure",
+                "name": "لمینیت سرامیکی",
+                "description": "طراحی لبخند با لمینیت‌های نازک سرامیکی"
+            }, {
+                "@type": "MedicalProcedure",
+                "name": "پیوند استخوان",
+                "description": "بازسازی استخوان فک برای آماده‌سازی ایمپلنت"
+            }]
+        }
+    </script>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "MedicalBusiness",
+            "@id": "https://dentalclinic.example.com/",
+            "name": "کلینیک دندانپزشکی دکتر علی احمدی",
+            "parentOrganization": {
+                "@type": "Dentist",
+                "@id": "https://dentalclinic.example.com/"
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "خیابان امام خمینی، ساختمان پزشکان پارس",
+                "addressLocality": "اراک",
+                "addressCountry": "IR"
+            },
+            "openingHours": "Sa-We 09:00-20:00, Th 09:00-14:00",
+            "telephone": "+989123456789"
+        }
+    </script>
+
+<!-- ============================================================
+    پنل مدیریت مخفی (ویرایشگر بصری)
+    ============================================================ -->
+<style>
+    /* استایل نوار ابزار مدیریت */
+    #admin-toolbar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #0F2747;
+        color: white;
+        padding: 12px 20px;
+        display: none;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+        z-index: 9999;
+        border-top: 3px solid #3F88C5;
+        box-shadow: 0 -4px 20px rgba(0,0,0,0.2);
+        font-family: 'Vazirmatn', sans-serif;
+    }
+    #admin-toolbar.show {
+        display: flex;
+    }
+    #admin-toolbar button {
+        background: #3F88C5;
+        border: none;
+        color: white;
+        padding: 6px 18px;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 14px;
+        cursor: pointer;
+        transition: 0.2s;
+        font-family: inherit;
+    }
+    #admin-toolbar button:hover {
+        background: #2a6b9e;
+        transform: scale(1.02);
+    }
+    #admin-toolbar button.danger {
+        background: #c0392b;
+    }
+    #admin-toolbar button.danger:hover {
+        background: #a93226;
+    }
+    #admin-toolbar .status {
+        color: #a0c4e8;
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .editable-hover:hover {
+        outline: 2px dashed #3F88C5 !important;
+        outline-offset: 4px;
+        cursor: text;
+        background: rgba(63, 136, 197, 0.05);
+        border-radius: 4px;
+    }
+    .img-editable {
+        cursor: pointer;
+        position: relative;
+    }
+    .img-editable::after {
+        content: '📷 کلیک برای تعویض';
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        background: rgba(15, 39, 71, 0.85);
+        color: white;
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-size: 12px;
+        opacity: 0;
+        transition: 0.3s;
+        pointer-events: none;
+        font-family: 'Vazirmatn', sans-serif;
+    }
+    .img-editable:hover::after {
+        opacity: 1;
+    }
+    /* هایلایت المان‌های قابل ویرایش در حالت مدیریت */
+    .admin-mode .editable-hover {
+        outline: 2px solid #3F88C5 !important;
+        outline-offset: 4px;
+        background: rgba(63, 136, 197, 0.03);
+    }
+</style>
+
+<div id="admin-toolbar" class="show">
+    <span class="status">🟢 حالت ویرایش فعال است</span>
+    <button onclick="saveChanges()">💾 ذخیره تغییرات</button>
+    <button onclick="downloadHTML()">📥 دانلود HTML نهایی</button>
+    <button onclick="resetToOriginal()" class="danger">↩️ بازگشت به حالت اولیه</button>
+    <button onclick="toggleEditMode()" class="danger">🚪 خروج از ویرایش</button>
+</div>
+
+<script>
+    // ============================================================
+    // هسته اصلی ویرایشگر بصری
+    // ============================================================
+    
+    let isEditMode = false;
+    let originalHTML = '';
+
+    // ذخیره نسخه اولیه برای بازگشت
+    window.addEventListener('DOMContentLoaded', function() {
+        originalHTML = document.body.innerHTML;
+        // بارگذاری تغییرات ذخیره شده
+        const saved = localStorage.getItem('clinic_edited_html');
+        if (saved) {
+            if (confirm('تغییرات ذخیره‌شده‌ای از قبل وجود دارد. آیا می‌خواهید آنها را بازیابی کنید؟')) {
+                document.body.innerHTML = saved;
+                // ری‌اتچ کردن event listenerها برای عکس‌ها
+                attachImageListeners();
+            }
+        }
+        // گوش دادن به ضربه روی لوگو (۵ بار)
+        let clickCount = 0;
+        const logo = document.querySelector('.logo');
+        if (logo) {
+            logo.addEventListener('click', function(e) {
+                e.preventDefault();
+                clickCount++;
+                if (clickCount >= 5) {
+                    toggleEditMode();
+                    clickCount = 0;
+                }
+                setTimeout(() => { clickCount = 0; }, 2000);
+            });
+        }
+        attachImageListeners();
+    });
+
+    // فعال/غیرفعال کردن حالت ویرایش
+    function toggleEditMode() {
+        isEditMode = !isEditMode;
+        const toolbar = document.getElementById('admin-toolbar');
+        const body = document.body;
+        
+        if (isEditMode) {
+            toolbar.classList.add('show');
+            body.classList.add('admin-mode');
+            // تمام المان‌های متنی را قابل ویرایش کن
+            document.querySelectorAll('h1, h2, h3, h4, h5, p, li, blockquote, .sub, .section-sub, .doctor-info .title, .faq-item .question, .faq-item .answer, .label, .badge, .trust-item p, .why-item p, .journey-step p, .journey-step h5, .testimonial-card blockquote, .testimonial-card .author, .article-card .body p, .article-card .body h3, .meta, .cta-section p, .cta-section h2, .footer p, .footer a, .top-bar span, .top-bar a')
+                .forEach(el => {
+                    el.setAttribute('contenteditable', 'true');
+                    el.classList.add('editable-hover');
+                });
+            // عکس‌ها را قابل کلیک کن
+            document.querySelectorAll('img').forEach(img => {
+                img.classList.add('img-editable');
+                img.setAttribute('title', 'برای تعویض عکس کلیک کنید');
+            });
+            alert('✅ حالت ویرایش فعال شد.\n\n📍 روی هر متن کلیک کنید تا آن را عوض کنید.\n📍 روی هر عکس کلیک کنید تا عکس جدید انتخاب کنید.\n📍 تغییرات با دکمه "ذخیره" ماندگار می‌شوند.');
+        } else {
+            toolbar.classList.remove('show');
+            body.classList.remove('admin-mode');
+            document.querySelectorAll('[contenteditable="true"]').forEach(el => {
+                el.removeAttribute('contenteditable');
+                el.classList.remove('editable-hover');
+            });
+            document.querySelectorAll('img').forEach(img => {
+                img.classList.remove('img-editable');
+                img.removeAttribute('title');
+            });
+        }
+    }
+
+    // گوش دادن به کلیک روی عکس‌ها برای آپلود
+    function attachImageListeners() {
+        document.querySelectorAll('img').forEach(img => {
+            img.removeEventListener('click', handleImageClick);
+            img.addEventListener('click', handleImageClick);
+        });
+    }
+
+    function handleImageClick(e) {
+        if (!isEditMode) return;
+        e.stopPropagation();
+        const img = e.currentTarget;
+        const input = document.createElement('input');
+        input.type = 'file';
+        input.accept = 'image/*';
+        input.onchange = function(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(loadEvent) {
+                    img.src = loadEvent.target.result;
+                    saveChanges(); // ذخیره خودکار بعد از تعویض عکس
+                };
+                reader.readAsDataURL(file);
+            }
+        };
+        input.click();
+    }
+
+    // ذخیره تغییرات در مرورگر
+    function saveChanges() {
+        // قبل از ذخیره، attributeهای اضافی رو پاک می‌کنیم
+        document.querySelectorAll('[contenteditable="true"]').forEach(el => {
+            el.removeAttribute('contenteditable');
+            el.classList.remove('editable-hover');
+        });
+        document.querySelectorAll('img').forEach(img => {
+            img.classList.remove('img-editable');
+            img.removeAttribute('title');
+        });
+        
+        const currentHTML = document.body.innerHTML;
+        localStorage.setItem('clinic_edited_html', currentHTML);
+        
+        // دوباره حالت ویرایش رو فعال کن (اگر فعال بود)
+        if (isEditMode) {
+            toggleEditMode();
+            toggleEditMode(); // ریست می‌کنیم تا دوباره contenteditable اعمال بشه
+        }
+        alert('✅ تغییرات با موفقیت در مرورگر شما ذخیره شد.');
+    }
+
+    // دانلود فایل HTML نهایی
+    function downloadHTML() {
+        // ابتدا ذخیره کن
+        saveChanges();
+        // دریافت محتوای نهایی
+        let htmlContent = document.documentElement.outerHTML;
+        // پاک کردن تگ‌های اضافی مدیریت از خروجی (اختیاری)
+        const blob = new Blob([htmlContent], { type: 'text/html' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'کلینیک_دکتر_احمدی_ویرایش_شده.html';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    }
+
+    // بازگشت به حالت اولیه (ریست)
+    function resetToOriginal() {
+        if (confirm('آیا مطمئن هستید؟ تمام تغییرات شما پاک خواهد شد.')) {
+            localStorage.removeItem('clinic_edited_html');
+            document.body.innerHTML = originalHTML;
+            attachImageListeners();
+            alert('✅ صفحه به حالت اولیه بازگشت.');
+            if (isEditMode) {
+                toggleEditMode();
+                toggleEditMode();
+            }
+        }
+    }
+
+    // گوش دادن به تغییرات درون ویرایشگر برای آپدیت خودکار
+    document.addEventListener('input', function(e) {
+        if (isEditMode && e.target.closest('[contenteditable="true"]')) {
+            // می‌توانیم اینجا auto-save هم بگذاریم ولی فعلاً دستی بهتر است
+        }
+    });
+
+    console.log('🛠️ مدیرت سایت فعال شد! برای فعال‌سازی، ۵ بار روی لوگو کلیک کنید.');
+</script>
+
+</body></html>
