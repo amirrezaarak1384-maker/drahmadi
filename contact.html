@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تماس با ما | دکتر علی احمدی</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family:'Vazirmatn','Inter',sans-serif; background:#FFFFFF; color:#1D2939; }
+        .container { max-width:1200px; margin:0 auto; padding:0 1.5rem; }
+        .top-bar { background:#0F2747; color:#fff; padding:0.5rem 0; font-size:0.8rem; border-bottom:1px solid rgba(255,255,255,0.08); }
+        .top-bar .container { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem 1rem; }
+        .top-bar a { color:#fff; text-decoration:none; display:inline-flex; align-items:center; gap:0.4rem; }
+        .top-bar a:hover { opacity:0.75; }
+        .top-bar .left, .top-bar .right { display:flex; align-items:center; gap:1.2rem; flex-wrap:wrap; }
+        .header { position:sticky; top:0; z-index:1000; background:rgba(255,255,255,0.92); backdrop-filter:blur(12px); border-bottom:1px solid #E6EAF0; }
+        .header .container { display:flex; justify-content:space-between; align-items:center; padding-top:0.75rem; padding-bottom:0.75rem; }
+        .logo { display:flex; align-items:center; text-decoration:none; gap:12px; }
+        .logo img { display:block; height:40px; width:auto; max-width:150px; }
+        .logo span { font-size:1.2rem; font-weight:700; color:#0F2747; white-space:nowrap; }
+        .logo span .blue { color:#3F88C5; }
+        .nav { display:flex; align-items:center; gap:1.8rem; }
+        .nav a { color:#1D2939; text-decoration:none; font-size:0.9rem; font-weight:500; transition:color 0.2s; position:relative; }
+        .nav a:hover { color:#3F88C5; }
+        .nav a::after { content:''; position:absolute; bottom:-4px; left:0; width:0; height:2px; background:#3F88C5; transition:width 0.3s; }
+        .nav a:hover::after { width:100%; }
+        .btn-primary { padding:0.5rem 1.2rem; font-size:0.8rem; color:#FFFFFF; background-color:#0F2747; border-radius:8px; text-decoration:none; font-weight:600; border:none; cursor:pointer; transition:all 0.3s; }
+        .btn-primary:hover { background-color:#3F88C5; }
+        .page-header { padding:3rem 0 1.5rem; background:#F6F8FA; border-bottom:1px solid #E6EAF0; }
+        .page-header h1 { font-size:2.2rem; color:#0F2747; }
+        .contact-wrap { display:grid; grid-template-columns:1fr 1fr; gap:3rem; padding:3rem 0; }
+        .contact-info { background:#F6F8FA; padding:2rem; border-radius:16px; }
+        .contact-info h3 { font-size:1.3rem; color:#0F2747; margin-bottom:1.5rem; }
+        .contact-info .item { display:flex; align-items:center; gap:1rem; margin-bottom:1.5rem; }
+        .contact-info .item .icon { width:44px; height:44px; background:#FFFFFF; border-radius:12px; display:flex; align-items:center; justify-content:center; color:#3F88C5; font-size:1.2rem; }
+        .contact-info .item .text { font-size:0.95rem; color:#1D2939; }
+        .contact-info .item .text small { display:block; color:#4a5a6e; font-size:0.8rem; }
+        .contact-form { background:#FFFFFF; padding:2rem; border-radius:16px; border:1px solid #E6EAF0; }
+        .contact-form h3 { font-size:1.3rem; color:#0F2747; margin-bottom:1.5rem; }
+        .contact-form label { display:block; font-weight:600; font-size:0.85rem; margin-bottom:0.3rem; color:#1D2939; }
+        .contact-form input, .contact-form textarea { width:100%; padding:0.8rem; border:1px solid #E6EAF0; border-radius:8px; font-family:inherit; font-size:0.95rem; margin-bottom:1rem; background:#F6F8FA; transition:border 0.3s; }
+        .contact-form input:focus, .contact-form textarea:focus { outline:none; border-color:#3F88C5; background:#fff; }
+        .contact-form textarea { height:120px; resize:vertical; }
+        .contact-form .btn-submit { background:#0F2747; color:#fff; border:none; padding:0.8rem 2rem; border-radius:8px; font-size:1rem; font-weight:600; cursor:pointer; transition:background 0.3s; width:100%; }
+        .contact-form .btn-submit:hover { background:#3F88C5; }
+        .footer { background:#0F2747; color:rgba(255,255,255,0.7); padding:2rem 0; margin-top:2rem; }
+        .footer .container { display:grid; grid-template-columns:2fr 1fr 1fr; gap:2.5rem; }
+        .footer h4 { color:#fff; font-size:1rem; margin-bottom:1rem; }
+        .footer a { color:rgba(255,255,255,0.65); text-decoration:none; display:block; font-size:0.85rem; line-height:2; }
+        .footer a:hover { color:#fff; }
+        .footer .bottom { border-top:1px solid rgba(255,255,255,0.06); padding-top:1.5rem; margin-top:2rem; text-align:center; font-size:0.75rem; grid-column:1/-1; }
+        @media (max-width:768px) {
+            .contact-wrap { grid-template-columns:1fr; }
+            .top-bar .container { flex-direction:column; align-items:stretch; }
+            .top-bar .left, .top-bar .right { justify-content:center; font-size:0.7rem; }
+            .header .container { flex-wrap:wrap; gap:0.5rem; }
+            .nav { gap:0.8rem; flex-wrap:wrap; justify-content:center; }
+            .nav a { font-size:0.75rem; }
+            .logo img { height:30px; max-width:100px; }
+            .logo span { font-size:1rem; }
+            .footer .container { grid-template-columns:1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="container">
+            <div class="right">
+                <a href="tel:+989123456789">📞 ۰۹۱۲-۳۴۵-۶۷۸۹</a>
+                <span style="opacity:0.3;">|</span>
+                <a href="https://wa.me/989123456789" target="_blank">📱 واتساپ</a>
+            </div>
+            <div class="left">
+                <span>🕐 شنبه تا چهارشنبه ۹–۲۰ | پنجشنبه ۹–۱۴</span>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="https://i.postimg.cc/0y8c8cz0/IMG-1238.jpg" alt="لوگو" />
+                <span>دکتر <span class="blue">احمدی</span></span>
+            </a>
+            <nav class="nav">
+                <a href="index.html">خانه</a>
+                <a href="services.html">خدمات</a>
+                <a href="about.html">درباره دکتر</a>
+                <a href="articles.html">مقالات</a>
+                <a href="contact.html" style="color:#3F88C5;">تماس</a>
+                <a href="appointments.html" class="btn-primary">نوبت‌دهی</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>تماس با ما</h1>
+            <p style="color:#4a5a6e; margin-top:0.5rem;">برای دریافت مشاوره یا تعیین وقت، با ما در تماس باشید</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="contact-wrap">
+            <div class="contact-info">
+                <h3>اطلاعات تماس</h3>
+                <div class="item">
+                    <div class="icon">📞</div>
+                    <div class="text">۰۹۱۲-۳۴۵-۶۷۸۹<small>پاسخگویی ۹ صبح تا ۸ شب</small></div>
+                </div>
+                <div class="item">
+                    <div class="icon">📍</div>
+                    <div class="text">اراک، خیابان امام خمینی، ساختمان پزشکان پارس<small>طبقه دوم، واحد ۵</small></div>
+                </div>
+                <div class="item">
+                    <div class="icon">🕐</div>
+                    <div class="text">ساعات کاری<small>شنبه تا چهارشنبه ۹–۲۰ | پنجشنبه ۹–۱۴</small></div>
+                </div>
+                <div class="item">
+                    <div class="icon">✉️</div>
+                    <div class="text">info@dentalclinic.com<small>پاسخگویی ایمیل در ۲۴ ساعت</small></div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h3>ارسال پیام</h3>
+                <form>
+                    <label>نام و نام خانوادگی</label>
+                    <input type="text" placeholder="نام خود را وارد کنید" />
+                    <label>شماره تماس</label>
+                    <input type="tel" placeholder="شماره تماس خود را وارد کنید" />
+                    <label>پیام شما</label>
+                    <textarea placeholder="متن پیام خود را بنویسید..."></textarea>
+                    <button type="submit" class="btn-submit">ارسال پیام</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div>
+                <h4>دکتر احمدی</h4>
+                <p style="color:rgba(255,255,255,0.65); font-size:0.85rem;">کلینیک تخصصی ایمپلنت و دندانپزشکی زیبایی</p>
+            </div>
+            <div>
+                <h4>دسترسی سریع</h4>
+                <a href="services.html">خدمات</a>
+                <a href="about.html">درباره دکتر</a>
+                <a href="articles.html">مقالات</a>
+            </div>
+            <div>
+                <h4>تماس</h4>
+                <p style="color:rgba(255,255,255,0.65); font-size:0.85rem;">📞 ۰۹۱۲-۳۴۵-۶۷۸۹</p>
+                <p style="color:rgba(255,255,255,0.65); font-size:0.85rem;">📍 اراک، خیابان امام خمینی</p>
+            </div>
+            <div class="bottom">© ۱۴۰۵ کلینیک دندانپزشکی دکتر علی احمدی</div>
+        </div>
+    </footer>
+</body>
+</html>
